@@ -1,5 +1,5 @@
 <script>
-import{store} from "../store";
+import{store,getExternalData} from "../store";
 
 export default {
 
@@ -8,14 +8,21 @@ export default {
         store,
      
     }
+  },
+  methods:{
+    getExternalData,
+    updateSearch(){
+
+    }
+
   }
 }
 </script>
 
 
 <template>
-  <button class="btn btn-danger rounded-5 ">cerca</button>
-  <input type="text" placeholder="cerca film">
+  <button @click="getExternalData()" class="btn btn-danger rounded-5 ">cerca</button>
+  <input v-model="store.textInput" type="search" placeholder="cerca film">
 </template>
 
 
