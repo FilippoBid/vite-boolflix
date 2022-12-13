@@ -13,11 +13,11 @@ export function getExternalData() {
     axios.get(staticUrl, {
         params: {
             api_key: "31c019f783227cac35f2e04fe6b48d80",
-            query: store.textInput
+            query: store.textInput,
         }
     })
         .then((resp) => {
-            store.externalDataStorage = resp
+            store.externalDataStorage = resp.data.results
 
         })
     

@@ -11,10 +11,10 @@ export default {
   },
   methods:{
     getExternalData,
-    updateSearch(){
+    makeEmit(){
+      this.$emit 
 
-    }
-
+    },
   }
 }
 </script>
