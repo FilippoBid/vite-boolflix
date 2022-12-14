@@ -21,6 +21,7 @@ export default {
         getStar() {
             /* array di valore booleani */
             let ratingstars = [];
+            let halfstar = false;
             /* valore corrispodende al decimale  */
             let prova = ((this.film.vote_average / 2) % 1) * 10
         
@@ -34,14 +35,15 @@ export default {
 
                 if (i < counterStars) {
                     
-                    if((i==4 )&& (prova <= 5)){
-                        ratingstars.push(3);
-                        }else{ratingstars.push(1);}
+                    
+                    ratingstars.push(1);
                 
                 }
                 else {
-                    if((i==4) && (prova <= 5)){
+                    if((prova <= 5) && halfstar == false){
                         ratingstars.push(3);
+                        halfstar = true;
+
                         }else{ratingstars.push(2)};
                 };
 
