@@ -27,8 +27,8 @@ export default {
   <!-- @makeEmit="eseguiRicerca()" -->
   <TheNavbarVue></TheNavbarVue>
   <div class="row ">
-    <TvBodyVue class="col col-6 bg-primary p-4"></TvBodyVue>
-    <SeriesBody class="col col-6 bg-success p-4"></SeriesBody>
+    <TvBodyVue class="col col-6 movie-bg-color p-4"></TvBodyVue>
+    <SeriesBody class="col col-6 series-bg-color p-4"></SeriesBody>
 
   </div>
 </template>

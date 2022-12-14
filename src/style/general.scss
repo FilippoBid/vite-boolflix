@@ -1,5 +1,6 @@
 @use "bootstrap/scss/bootstrap" as * ;
 @use "@fortawesome/fontawesome-free/css/all.min.css" as *;
+@use "@fortawesome/fontawesome-free/css/all.min.css";
 @import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 .transparent-text-bg{
@@ -11,3 +12,10 @@
     background-color : #ee3425
 
 };
+.movie-bg-color{
+    background-color : #ee3425
+};
+.movie-bg-color{
+    background-color : #ffff
+    
+}

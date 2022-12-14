@@ -29,7 +29,7 @@ export default {
     <div class="d-flex align-items-center mb-4">
 
        <input v-model="store.textInput" type="search" placeholder="cerca film">
-       <button @click="getExternalData(),getExternalDataTvSeries()" class="btn btn-danger rounded-5">Cerca</button>
+       <button @click="getExternalData(),getExternalDataTvSeries()" class="btn btn-danger rounded-5 ms-3">Cerca</button>
 
     </div>
 
