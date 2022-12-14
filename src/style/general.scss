@@ -1,0 +1,13 @@
+@use "bootstrap/scss/bootstrap" as * ;
+@use "@fortawesome/fontawesome-free/css/all.min.css" as *;
+@import "/node_modules/flag-icons/css/flag-icons.min.css";
+
+.transparent-text-bg{
+
+    background-color : #4a4a4aab
+
+};
+.red-bg{
+    background-color : #ee3425
+
+};

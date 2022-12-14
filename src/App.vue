@@ -3,8 +3,9 @@ import{store,getExternalData} from "./store";
 import TheNavbarVue from './components/TheNavbar.vue';
 import TvBodyVue from './components/TvBody.vue';
 import SingleCardLayout from "./components/SingleCardLayout.vue";
+import SeriesBody from "./components/SeriesBody.vue";
 export default {
-  components:{TheNavbarVue,TvBodyVue,SingleCardLayout},
+  components:{TheNavbarVue,TvBodyVue,SingleCardLayout,SeriesBody},
   data() {
     return {
     store ,
@@ -25,8 +26,9 @@ export default {
 <template>
   <!-- @makeEmit="eseguiRicerca()" -->
   <TheNavbarVue></TheNavbarVue>
-  <div class="row">
-    <TvBodyVue class="col col-6"></TvBodyVue>
+  <div class="row ">
+    <TvBodyVue class="col col-6 bg-primary p-4"></TvBodyVue>
+    <SeriesBody class="col col-6 bg-success p-4"></SeriesBody>
 
   </div>
 </template>
